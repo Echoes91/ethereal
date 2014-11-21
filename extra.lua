@@ -287,9 +287,8 @@ minetest.register_on_generated(function(minp, maxp, seed)
 	for key, pos in pairs(coal_nodes) do
 
 		local bpos = { x=pos.x, y=pos.y + 1, z=pos.z }
-		nod = minetest.get_node(bpos).name
 
-		if nod == "air" then
+		if minetest.get_node(bpos).name == "air" then
 			if bpos.y > -3000 and bpos.y < -2000 then
 				minetest.add_node(bpos, {name = "ethereal:illumishroom3"})
 			elseif bpos.y > -2000 and bpos.y < -1000 then

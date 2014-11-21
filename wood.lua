@@ -16,7 +16,6 @@ minetest.register_node("ethereal:acacia_wood", {			-- Acacia Wood
 
 minetest.register_craft({
 	output = "ethereal:acacia_wood 4",
-	type = shapeless,
 	recipe = {{"ethereal:acacia_trunk"}}
 })
 
@@ -117,7 +116,6 @@ minetest.register_node("ethereal:palm_wood", {			-- Palm Wood
 
 minetest.register_craft({
 	output = "ethereal:palm_wood 4",
-	type = shapeless,
 	recipe = {{"ethereal:palm_trunk"}}
 })
 

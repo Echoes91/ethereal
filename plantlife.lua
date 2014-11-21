@@ -347,11 +347,8 @@ minetest.register_craft({
 -- Mushroom Tops give 4x Mushrooms for Planting
 minetest.register_craft({
 	output = "ethereal:mushroom_craftingitem 4",
-	type = shapeless,
 	recipe = {
-		{"ethereal:mushroom", ""},
-		{"", ""},
-		{"", ""},
+		{"ethereal:mushroom"},
 	}
 })
 
@@ -456,7 +453,6 @@ minetest.register_craftitem("ethereal:bucket_cactus", {
 
 minetest.register_craft({
 	output = "ethereal:bucket_cactus",
-	type = shapeless,
 	recipe = {
 		{"bucket:bucket_empty","default:cactus"},
 	}

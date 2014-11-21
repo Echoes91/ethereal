@@ -37,7 +37,7 @@ minetest.register_node("ethereal:crystal_block", {
 	description = "Crystal Block",
 	tiles = {"crystal_block.png"},
 	light_source = LIGHT_MAX - 5,
-	groups = {cracky=1,level=2,puts_out_fire},
+	groups = {cracky=1,level=2,puts_out_fire=1},
 	sounds = default.node_sound_glass_defaults(),
 })
 
