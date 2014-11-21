@@ -60,7 +60,7 @@ dofile(minetest.get_modpath("ethereal").."/extra.lua")
 dofile(minetest.get_modpath("ethereal").."/sealife.lua")
 dofile(minetest.get_modpath("ethereal").."/fences.lua")
 dofile(minetest.get_modpath("ethereal").."/gates.lua")
---dofile(minetest.get_modpath("ethereal").."/stairs.lua")
+dofile(minetest.get_modpath("ethereal").."/stairs.lua")
 
 -- Xanadu server Only
 --dofile(minetest.get_modpath("ethereal").."/plantpack.lua")
