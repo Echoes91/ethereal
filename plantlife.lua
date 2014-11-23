@@ -204,12 +204,17 @@ minetest.register_craftitem("ethereal:banana_bread", {
 
 -- Coconut (Gives 4 coconut slices, each heal 1/2 heart)
 minetest.register_node("ethereal:coconut", {
+	description = "Coconut",
 	drawtype = "plantlike",
 	walkable = false,
 	paramtype = "light",
-	description = "Coconut",
+	sunlight_propagates = true,
 	tiles = {"moretrees_coconut.png"},
-	groups = {cracky=2,snappy=2,choppy=2,flammable=1,leafdecay=3,leafdecay_drop=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.35, -0.35, -0.35, 0.35, 0.35, 0.35}
+	},
+	groups = {snappy=1,oddly_breakable_by_hand=1,cracky=1,choppy=1,flammable=1,leafdecay=3,leafdecay_drop=1},
 	drop = "ethereal:coconut_slice 4",
 	sounds = default.node_sound_wood_defaults(),
 })
