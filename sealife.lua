@@ -129,7 +129,7 @@ minetest.register_abm({
 
 	action = function(pos, node)
 
-		sel = math.random(1,5)
+		local sel = math.random(1,5)
 		if sel == 1 or minetest.get_node(pos).name == "ethereal:seaweed" then
 
 			local height = 0

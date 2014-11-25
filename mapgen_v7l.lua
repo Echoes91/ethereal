@@ -517,8 +517,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 				local z = pr:next(z0, z1)
 				if minetest.get_node({x=x,y=1,z=z}).name == "default:sand" and
 					minetest.find_node_near({x=x,y=1,z=z}, 1, "default:water_source") then
-					schematic = path.."palmtree.mts"
-					minetest.place_schematic({x=x-4,y=2,z=z-4}, schematic, 0, "", 0)
+					minetest.place_schematic({x=x-4,y=2,z=z-4}, path.."palmtree.mts", 0, "", 0)
 				end
 			end
 		end
