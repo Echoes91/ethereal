@@ -604,7 +604,7 @@ minetest.register_decoration({						-- Carrot, Cucumber, Potato, Tomato, Corn, C
 
 minetest.register_decoration({						-- Melon, Pumpkin
 	deco_type = "simple",
-	place_on = {"default:green_dirt", "ethereal:jungle_dirt"},
+	place_on = {"ethereal:green_dirt", "ethereal:jungle_dirt"},
 	sidelen = 16,
 	fill_ratio = 0.015,
 	biomes = {"grassy", "grassytwo", "junglee", "jumble"},

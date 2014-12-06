@@ -20,7 +20,7 @@ minetest.register_decoration({
 	deco_type = "simple",
 	place_on = {"default:desert_sand", "default:sandstone", "default:sand"},
 	sidelen = 16,
-	fill_ratio = 0.003,
+	fill_ratio = 0.004,
 	biomes = {"desert", "desertstone"},
 	decoration = {"bakedclay:desert_kangaroo", "bakedclay:desert_brittle", "bakedclay:desert_ocotillo", "bakedclay:desert_whitesage"},
 })
