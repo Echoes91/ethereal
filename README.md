@@ -4,6 +4,11 @@ Ethereal v7 Mapgen mod for Minetest
 
 Changelog:
 
+1.13
+
+Changed melting feature to work with 0.4.10 dev now that group:hot and group:melt has been removed
+
+
 1.12
 
 Added ability to disable biomes in the init.lua file by setting to 1 (enable) or 0 (disable)

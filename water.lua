@@ -75,9 +75,10 @@ minetest.register_abm({
 
 -- If Heat Source near Ice or Snow then melt
 minetest.register_abm({
-	--nodenames = {"default:ice", "default:snowblock", "default:snow", "default:dirt_with_snow"},
-	nodenames = {"group:melts", "default:dirt_with_snow"},
-	neighbors = {"group:hot"},
+	nodenames = {"default:ice", "default:snowblock", "default:snow", "default:dirt_with_snow", "ethereal:snowbrick", "ethereal:icebrick"},
+	--nodenames = {"group:melts", "default:dirt_with_snow"},
+	--neighbors = {"group:hot"},
+	neighbors = {"fire:basic_fire", "default:lava_source", "default:lava_flowing", "default:furnace_active", "default:torch"},
 	interval = 10,
 	chance = 2,
 	action = function(pos, node, active_object_count, active_object_count_wider)
