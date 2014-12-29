@@ -1,6 +1,6 @@
 --[[
 
-	Minetest Ethereal Mod 1.12 (21st Nov 2014)
+	Minetest Ethereal Mod 1.14 (29th Dec 2014)
 
 	Created by ChinChow
 
@@ -9,7 +9,6 @@
 ]]
 
 ethereal = {}
-ethereal.mapstyle = 0 -- 0 for spread-style, 1 for layered-style
 ethereal.leaftype = 0 -- 0 for 2D plantlike, 1 for 3D allfaces
 
 -- Set following to 1 to enable biome or 0 to disable
@@ -32,17 +31,12 @@ ethereal.grove 			= 1 -- Banana groves and ferns
 ethereal.mushroom 		= 1 -- Purple grass with giant mushrooms
 ethereal.desertstone 	= 1 -- Desert stone with smaller cactus
 ethereal.quicksand 		= 1 -- Quicksand banks
-ethereal.lake 			= 1 -- Small sandy lake areas with gravel below
+ethereal.lake 			= 1 -- Small sandy lake areas with gravel below, also used for ocean floor
 ethereal.plains 		= 1 -- Dry dirt with scorched trees
 ethereal.fiery 			= 1 -- Red grass with lava craters
 ethereal.sandclay		= 1 -- Sand areas with clay underneath
 
-if ethereal.mapstyle == 0 then
-	dofile(minetest.get_modpath("ethereal").."/mapgen_v7s.lua")
-else
-	dofile(minetest.get_modpath("ethereal").."/mapgen_v7l.lua")
-end
-
+dofile(minetest.get_modpath("ethereal").."/mapgen_v7s.lua")
 dofile(minetest.get_modpath("ethereal").."/plantlife.lua")
 dofile(minetest.get_modpath("ethereal").."/mushroom.lua")
 dofile(minetest.get_modpath("ethereal").."/onion.lua")

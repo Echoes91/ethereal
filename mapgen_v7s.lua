@@ -1,3 +1,8 @@
+-- Clear default mapgen definitions
+minetest.clear_registered_biomes()
+minetest.clear_registered_decorations()
+--minetest.clear_registered_ores()
+
 -- Biomes
 if ethereal.bamboo == 1 then
 minetest.register_biome({
@@ -7,6 +12,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 71,
 	heat_point     = 45.0,						humidity_point = 75.0,
 })
+print ("Ethereal Bamboo Enabled")
 end
 
 if ethereal.mesa == 1 then
@@ -17,6 +23,7 @@ minetest.register_biome({
 	height_min     = 2,							height_max     = 71,
 	heat_point     = 25.0,						humidity_point = 28.0,
 })
+print ("Ethereal Mesa Enabled")
 end
 
 if ethereal.alpine == 1 then
@@ -27,6 +34,7 @@ minetest.register_biome({
 	height_min     = 40,						height_max     = 90,
 	heat_point     = 10.0,						humidity_point = 40.0,
 })
+print ("Ethereal Alpine Enabled")
 end
 
 if ethereal.healing == 1 then
@@ -37,6 +45,7 @@ minetest.register_biome({
 	height_min     = 75,						height_max     = 140,
 	heat_point     = 10.0,						humidity_point = 40.0,
 })
+print ("Ethereal Healing Enabled")
 end
 
 if ethereal.snowy == 1 then
@@ -47,6 +56,7 @@ minetest.register_biome({
 	height_min     = 5,							height_max     = 40,
 	heat_point     = 10.0,						humidity_point = 40.0,
 })
+print ("Ethereal Snowy Enabled")
 end
 
 if ethereal.frost == 1 then
@@ -57,6 +67,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 71,
 	heat_point     = 10.0,						humidity_point = 40.0,
 })
+print ("Ethereal Frost Enabled")
 end
 
 if ethereal.grassy == 1 then
@@ -67,6 +78,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 91,
 	heat_point     = 13.0,						humidity_point = 40.0,
 })
+print ("Ethereal Grassy Enabled")
 end
 
 if ethereal.caves == 1 then
@@ -77,6 +89,7 @@ minetest.register_biome({
 	height_min     = 4,							height_max     = 41,
 	heat_point     = 15.0,						humidity_point = 25.0,
 })
+print ("Ethereal Caves Enabled")
 end
 
 if ethereal.grayness == 1 then
@@ -87,6 +100,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 41,
 	heat_point     = 15.0,						humidity_point = 30.0,
 })
+print ("Ethereal Grayness Enabled")
 end
 
 if ethereal.grassytwo == 1 then
@@ -97,6 +111,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 91,
 	heat_point     = 15.0,						humidity_point = 40.0,
 })
+print ("Ethereal GrassyTwo Enabled")
 end
 
 if ethereal.prairie == 1 then
@@ -107,6 +122,7 @@ minetest.register_biome({
 	height_min     = 3,							height_max     = 26,
 	heat_point     = 20.0,						humidity_point = 40.0,
 })
+print ("Ethereal Prairie Enabled")
 end
 
 if ethereal.jumble == 1 then
@@ -117,6 +133,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 71,
 	heat_point     = 25.0,						humidity_point = 50.0,
 })
+print ("Ethereal Jumble Enabled")
 end
 
 if ethereal.junglee == 1 then
@@ -127,6 +144,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 71,
 	heat_point     = 30.0,						humidity_point = 60.0,
 })
+print ("Ethereal Junglee Enabled")
 end
 
 if ethereal.desert ==1 then
@@ -137,6 +155,7 @@ minetest.register_biome({
 	height_min     = 3,							height_max     = 23,
 	heat_point     = 35.0,						humidity_point = 20.0,
 })
+print ("Ethereal Desert Enabled")
 end
 
 if ethereal.grove == 1 then
@@ -147,6 +166,7 @@ minetest.register_biome({
 	height_min     = 3,							height_max     = 23,
 	heat_point     = 40.0,						humidity_point = 60.0,
 })
+print ("Ethereal Grove Enabled")
 end
 
 if ethereal.mushroom == 1 then
@@ -157,6 +177,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 50,
 	heat_point     = 45.0,						humidity_point = 65.0,
 })
+print ("Ethereal Mushroom Enabled")
 end
 
 if ethereal.desertstone == 1 then
@@ -167,6 +188,7 @@ minetest.register_biome({
 	height_min     = 3,							height_max     = 23,
 	heat_point     = 50.0,						humidity_point = 20.0,
 })
+print ("Ethereal DesertStone Enabled")
 end
 
 if ethereal.quicksand == 1 then
@@ -177,6 +199,7 @@ minetest.register_biome({
 	height_min		= 1,						height_max = 1,
 	heat_point		= 50,						humidity_point = 38,
 })
+print ("Ethereal Quicksand Enabled")
 end
 
 if ethereal.lake == 1 then
@@ -188,6 +211,7 @@ minetest.register_biome({
 	height_min		= -31000,					height_max = 3,
 	heat_point		= 50,						humidity_point = 40,
 })
+print ("Ethereal Lake Enabled")
 end
 
 if ethereal.plains == 1 then
@@ -198,6 +222,7 @@ minetest.register_biome({
 	height_min     = 3,							height_max     = 61,
 	heat_point     = 55.0,						humidity_point = 25.0,
 })
+print ("Ethereal Plains Enabled")
 end
 
 if ethereal.fiery == 1 then
@@ -208,6 +233,7 @@ minetest.register_biome({
 	height_min     = 5,							height_max     = 65,
 	heat_point     = 80.0,						humidity_point = 10.0,
 })
+print ("Ethereal Fiery Enabled")
 end
 
 if ethereal.sandclay == 1 then
@@ -218,6 +244,7 @@ minetest.register_biome({
 	height_min     = 1,							height_max     = 11,
 	heat_point     = 65.0,						humidity_point = 2.0,
 })
+print ("Ethereal SandClay Enabled")
 end
 
 -- Schematics Decoration
@@ -226,7 +253,7 @@ local path = minetest.get_modpath("ethereal").."/schematics/"
 minetest.register_decoration({							-- Redwood Tree
 	deco_type = "schematic",
 	place_on = {"bakedclay:red","bakedclay:orange"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.01, -- was 0.025
 	biomes = {"mesa"},
 	schematic = path.."redwood.mts",
@@ -236,7 +263,7 @@ minetest.register_decoration({							-- Redwood Tree
 minetest.register_decoration({							-- Banana Tree
 	deco_type = "schematic",
 	place_on = "ethereal:grove_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.015,
 	biomes = {"grove"},
 	schematic = path.."bananatree.mts",
@@ -246,7 +273,7 @@ minetest.register_decoration({							-- Banana Tree
 minetest.register_decoration({							-- Healing Tree
 	deco_type = "schematic",
 	place_on = "default:dirt_with_snow",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.04,
 	biomes = {"healing"},
 	schematic = path.."yellowtree.mts",
@@ -256,7 +283,7 @@ minetest.register_decoration({							-- Healing Tree
 minetest.register_decoration({							-- Frost Tree
 	deco_type = "schematic",
 	place_on = "ethereal:crystal_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.010,
 	biomes = {"frost"},
 	schematic = path.."frosttrees.mts",
@@ -266,7 +293,7 @@ minetest.register_decoration({							-- Frost Tree
 minetest.register_decoration({							-- Giant Mushroom
 	deco_type = "schematic",
 	place_on = "ethereal:mushroom_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.070,
 	biomes = {"mushroom"},
 	schematic = path.."mushroomone.mts",
@@ -276,7 +303,7 @@ minetest.register_decoration({							-- Giant Mushroom
 minetest.register_decoration({							-- Small Lava Crater
 	deco_type = "schematic",
 	place_on = "ethereal:fiery_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.012,
 	biomes = {"fiery"},
 	schematic = path.."volcanom.mts",
@@ -286,7 +313,7 @@ minetest.register_decoration({							-- Small Lava Crater
 minetest.register_decoration({							-- Large Lava Crater
 	deco_type = "schematic",
 	place_on = "ethereal:fiery_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.010,
 	biomes = {"fiery"},
 	schematic = path.."volcanol.mts",
@@ -297,7 +324,7 @@ minetest.register_decoration({							-- Large Lava Crater
 minetest.register_decoration({							-- Jungle Tree
 	deco_type = "schematic",
 	place_on = "ethereal:jungle_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.3, -- was 0.250
 	biomes = {"junglee"},
 	schematic = path.."jungletree.mts",
@@ -307,7 +334,7 @@ minetest.register_decoration({							-- Jungle Tree
 minetest.register_decoration({							-- Willow Tree
 	deco_type = "schematic",
 	place_on = "ethereal:gray_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.025,
 	biomes = {"grayness"},
 	schematic = path.."willow.mts",
@@ -317,7 +344,7 @@ minetest.register_decoration({							-- Willow Tree
 minetest.register_decoration({							-- Pine Tree
 	deco_type = "schematic",
 	place_on = {"ethereal:cold_dirt", "default:dirt_with_snow"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.025,
 	biomes = {"snowy", "alpine"},
 	schematic = path.."pinetree.mts",
@@ -327,7 +354,7 @@ minetest.register_decoration({							-- Pine Tree
 minetest.register_decoration({							-- Apple Tree
 	deco_type = "schematic",
 	place_on = "ethereal:green_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.030,
 	biomes = {"grassy, jumble"},
 	schematic = path.."tree.mts",
@@ -337,7 +364,7 @@ minetest.register_decoration({							-- Apple Tree
 minetest.register_decoration({
 	deco_type = "schematic",
 	place_on = {"ethereal:green_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.005,
 	biomes = {"grassytwo"},
 	schematic = path.."tree.mts",
@@ -347,7 +374,7 @@ minetest.register_decoration({
 minetest.register_decoration({							-- Orange Tree
 	deco_type = "schematic",
 	place_on = {"ethereal:prairie_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.005,
 	biomes = {"prairie"},
 	schematic = path.."orangetree.mts",
@@ -357,7 +384,7 @@ minetest.register_decoration({							-- Orange Tree
 minetest.register_decoration({							-- Acacia Tree
 	deco_type = "schematic",
 	place_on = {"default:desert_sand"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.004,
 	biomes = {"desert"},
 	schematic = path.."acaciatree.mts",
@@ -367,30 +394,10 @@ minetest.register_decoration({							-- Acacia Tree
 minetest.register_decoration({							-- Big Old Tree
 	deco_type = "schematic",
 	place_on = "ethereal:green_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.010,
 	biomes = {"grassytwo"},
 	schematic = path.."bigtree.mts",
-	flags = "place_center_x, place_center_z",
-})
-
-minetest.register_decoration({							-- Old Rail Section
-	deco_type = "schematic",
-	place_on = "default:sandstone",
-	sidelen = 16,
-	fill_ratio = 0.002,
-	biomes = {"desertsandstone"},
-	schematic = path.."rail.mts",
-	flags = "place_center_x, place_center_z",
-})
-
-minetest.register_decoration({
-	deco_type = "schematic",
-	place_on = "default:sandstone",
-	sidelen = 16,
-	fill_ratio = 0.002,
-	biomes = {"desertsandstone"},
-	schematic = path.."railtwo.mts",
 	flags = "place_center_x, place_center_z",
 })
 
@@ -398,7 +405,7 @@ minetest.register_decoration({
 minetest.register_decoration({							-- Scorched Tree
 	deco_type = "simple",
 	place_on = "ethereal:dry_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.006,
 	biomes = {"plains"},
 	decoration = "ethereal:scorched_tree",
@@ -408,7 +415,7 @@ minetest.register_decoration({							-- Scorched Tree
 minetest.register_decoration({							-- Bamboo Stalks
 	deco_type = "simple",
 	place_on = "ethereal:bamboo_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.055,
 	biomes = {"bamboo"},
 	decoration = "ethereal:bamboo",
@@ -418,7 +425,7 @@ minetest.register_decoration({							-- Bamboo Stalks
 minetest.register_decoration({							-- Bamboo Sprouts & Grass
 	deco_type = "simple",
 	place_on = "ethereal:bamboo_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.25,
 	biomes = {"bamboo"},
 	decoration = {"ethereal:bamboo_sprout", "default:grass_2", "default:grass_3"},
@@ -427,7 +434,7 @@ minetest.register_decoration({							-- Bamboo Sprouts & Grass
 minetest.register_decoration({							-- Dry Shrub
 	deco_type = "simple",
 	place_on = {"ethereal:dry_dirt", "default:sand", "default:desert_sand", "sandstone", "bakedclay:red"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.015,
 	biomes = {"plains", "lake", "desert", "desertstone", "mesa"},
 	decoration = "default:dry_shrub",
@@ -436,7 +443,7 @@ minetest.register_decoration({							-- Dry Shrub
 minetest.register_decoration({							-- Flowers & Strawberry
 	deco_type = "simple",
 	place_on = "ethereal:green_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.030,
 	biomes = {"grassy", "grassy", "grassytwo"},
 	decoration = {"flowers:dandelion_white", "flowers:dandelion_yellow", "flowers:geranium", "flowers:rose", "flowers:tulip", "flowers:viola", "ethereal:strawberry_7"},
@@ -445,7 +452,7 @@ minetest.register_decoration({							-- Flowers & Strawberry
 minetest.register_decoration({							-- Prairie Flowers & Strawberry
 	deco_type = "simple",
 	place_on = "ethereal:prairie_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.050,
 	biomes = {"prairie"},
 	decoration = {"flowers:dandelion_white", "flowers:dandelion_yellow", "flowers:geranium", "flowers:rose", "flowers:tulip", "flowers:viola", "ethereal:strawberry_7"},
@@ -454,7 +461,7 @@ minetest.register_decoration({							-- Prairie Flowers & Strawberry
 minetest.register_decoration({							-- Crystal Spike & Crystal Grass
 	deco_type = "simple",
 	place_on = "ethereal:crystal_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.02,
 	biomes = {"frost"},
 	decoration = {"ethereal:crystal_spike", "ethereal:crystalgrass"},
@@ -463,7 +470,7 @@ minetest.register_decoration({							-- Crystal Spike & Crystal Grass
 minetest.register_decoration({							-- Red Shrub
 	deco_type = "simple",
 	place_on = "ethereal:fiery_dirt", 
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.20,
 	biomes = {"fiery"},
 	decoration = "ethereal:dry_shrub",
@@ -472,7 +479,7 @@ minetest.register_decoration({							-- Red Shrub
 minetest.register_decoration({							-- Snowy Grass
 	deco_type = "simple",
 	place_on = {"ethereal:gray_dirt", "ethereal:cold_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.05,
 	biomes = {"grayness", "snowy"},
 	decoration = "ethereal:snowygrass",
@@ -481,17 +488,27 @@ minetest.register_decoration({							-- Snowy Grass
 minetest.register_decoration({							-- Cactus
 	deco_type = "simple",
 	place_on = "default:sandstone",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.010,
 	biomes = {"desertstone"},
 	decoration = "default:cactus",
 	height_max = 3,
 })
 
+minetest.register_decoration({							-- Cactus
+	deco_type = "simple",
+	place_on = "default:desert_sand",
+	sidelen = 80, -- was 16
+	fill_ratio = 0.010,
+	biomes = {"desert"},
+	decoration = "default:cactus",
+	height_max = 4,
+})
+
 minetest.register_decoration({							-- Wild Mushroom
 	deco_type = "simple",
 	place_on = "ethereal:mushroom_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.015,
 	biomes = {"mushroom"},
 	decoration = "ethereal:mushroom_plant",
@@ -500,7 +517,7 @@ minetest.register_decoration({							-- Wild Mushroom
 minetest.register_decoration({							-- Jungle Grass
 	deco_type = "simple",
 	place_on = {"ethereal:jungle_dirt", "ethereal:green_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.18,
 	biomes = {"junglee", "jumble"},
 	decoration = "default:junglegrass",
@@ -509,7 +526,7 @@ minetest.register_decoration({							-- Jungle Grass
 minetest.register_decoration({							-- Grass
 	deco_type = "simple",
 	place_on = {"ethereal:green_dirt_top", "ethereal:jungle_dirt", "ethereal:prairie_dirt", "ethereal:grove_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.40, -- was 0.50
 	biomes = {"grassy", "grassytwo", "jumble", "junglee", "prairie", "grove"},
 	decoration = "default:grass_2", "default:grass_3", "default:grass_4", "default:grass_5",
@@ -518,7 +535,7 @@ minetest.register_decoration({							-- Grass
 minetest.register_decoration({							-- Ferns
 	deco_type = "simple",
 	place_on = "ethereal:grove_dirt",
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.20,
 	biomes = {"grove"},
 	decoration = "ethereal:fern",
@@ -527,7 +544,7 @@ minetest.register_decoration({							-- Ferns
 minetest.register_decoration({							-- Snow
 	deco_type = "simple",
 	place_on = {"ethereal:cold_dirt", "default:dirt_with_snow"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.80,
 	biomes = {"snowy", "alpine"},
 	decoration = "default:snow",
@@ -536,7 +553,7 @@ minetest.register_decoration({							-- Snow
 minetest.register_decoration({							-- Wild Onion
 	deco_type = "simple",
 	place_on = {"ethereal:green_dirt", "ethereal:prairie_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.25, -- was 0.35
 	biomes = {"grassy", "grassytwo", "jumble", "prairie"},
 	decoration = "ethereal:onion_4",
@@ -545,7 +562,7 @@ minetest.register_decoration({							-- Wild Onion
 minetest.register_decoration({							-- Papyrus
 	deco_type = "simple",
 	place_on = {"ethereal:green_dirt", "ethereal:jungle_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.1,
 	biomes = {"grassy", "junglee"},
 	decoration = "default:papyrus",
@@ -587,8 +604,8 @@ if minetest.get_modpath("farming") and farming.mod == "redo" then
 minetest.register_decoration({						-- Potato
 	deco_type = "simple",
 	place_on = {"ethereal:jungle_dirt"},
-	sidelen = 16,
-	fill_ratio = 0.045,
+	sidelen = 80, -- was 16
+	fill_ratio = 0.035,
 	biomes = {"junglee"},
 	decoration = "farming:potato_3",
 })
@@ -596,7 +613,7 @@ minetest.register_decoration({						-- Potato
 minetest.register_decoration({						-- Carrot, Cucumber, Potato, Tomato, Corn, Coffee, Raspberry, Rhubarb
 	deco_type = "simple",
 	place_on = {"ethereal:green_dirt", "ethereal:prairie_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.05,
 	biomes = {"grassy", "grassytwo", "prairie", "jumble"},
 	decoration = {"farming:carrot_7", "farming:cucumber_4", "farming:potato_3", "farming:tomato_7", "farming:corn_8", "farming:coffee_5", "farming:raspberry_4", "farming:rhubarb_3", "farming:blueberry_4"},
@@ -605,7 +622,7 @@ minetest.register_decoration({						-- Carrot, Cucumber, Potato, Tomato, Corn, C
 minetest.register_decoration({						-- Melon, Pumpkin
 	deco_type = "simple",
 	place_on = {"ethereal:green_dirt", "ethereal:jungle_dirt"},
-	sidelen = 16,
+	sidelen = 80, -- was 16
 	fill_ratio = 0.015,
 	biomes = {"grassy", "grassytwo", "junglee", "jumble"},
 	decoration = {"farming:melon_8", "farming:pumpkin_8"},

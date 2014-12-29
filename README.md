@@ -4,9 +4,18 @@ Ethereal v7 Mapgen mod for Minetest
 
 Changelog:
 
+1.14
+
+Changed Ethereal to work with Minetest 0.4.11 update and new mapgen features
+Changed Pine tree's to use default pine wood
+Added pine wood fence, gate and stairs
+Crystal Spikes now re-generate in crystal biomes
+Removed layer mapgen, keeping spread as default
+
+
 1.13
 
-Changed melting feature to work with 0.4.10 dev now that group:hot and group:melt has been removed
+Changed melting feature to work with 0.4.11 pre-release now that group:hot and group:melt have been removed
 
 
 1.12

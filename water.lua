@@ -107,3 +107,23 @@ minetest.register_abm({
 		minetest.add_node(pos,{name="default:dirt"})
 	end,
 })
+--[[
+-- If water next to mushroom pore then remove water
+minetest.register_abm({
+	nodenames = {"ethereal:mushroom_pore"},
+	neighbors = {"group:water"},
+	interval = 2,
+	chance = 1,
+	action = function(pos, node)
+		local pos0 = {x=pos.x-1,y=pos.y-1,z=pos.z-1}
+		local pos1 = {x=pos.x+1,y=pos.y+1,z=pos.z+1}
+
+		local water = minetest.env:find_nodes_in_area(pos0, pos1, "group:water")
+		if water then
+			for n = 1, #water do
+				minetest.env:set_node(water[n], {name="air"})
+			end
+		end
+	end,
+})
+]]

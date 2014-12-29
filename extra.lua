@@ -167,23 +167,8 @@ minetest.register_craft({
 	}
 })
 
--- Obsidian Brick
-minetest.register_node("ethereal:obsidian_brick", {
-	description = "Obsidian Brick",
-	inventory_image = minetest.inventorycube("obsidian_brick.png"),
-	tiles = {"obsidian_brick.png"},
-	paramtype = "facedir",
-	groups = {cracky=1,level=3},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_craft({
-	output = 'ethereal:obsidian_brick 2',
-	recipe = {
-		{'default:obsidian', 'default:obsidian'},
-		{'default:obsidian', 'default:obsidian'},
-	}
-})
+-- Obsidian Brick (now in default game so added compatibility for old maps)
+minetest.register_alias("ethereal:obsidian_brick", "default:obsidianbrick")
 
 -- Quicksand (old style, sinking inside shows black instead of yellow effect,
 -- works ok with noclip enabled though)

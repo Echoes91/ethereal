@@ -80,6 +80,13 @@ stairs.register_stair_and_slab("willow_wood", "ethereal:willow_wood",
 	"Willow Wood Slab",
 	default.node_sound_wood_defaults())
 
+stairs.register_stair_and_slab("pine_wood", "default:pinewood",
+	{choppy=2,oddly_breakable_by_hand=1,flammable=3, not_in_craft_guide=1},
+	{"default_pinewood.png"},
+	"Pine Wood Stair",
+	"Pine Wood Slab",
+	default.node_sound_wood_defaults())
+
 stairs.register_stair_and_slab("redwood_wood", "ethereal:redwood_wood",
 	{choppy=2,oddly_breakable_by_hand=1,flammable=3, not_in_craft_guide=1},
 	{"redwood_wood.png"},

@@ -43,7 +43,7 @@ gate.type = {
 	{"banana",		"Banana Wood",	"banana_wood.png",			"ethereal:banana_wood"},
 	{"mushroom",	"Mushroom",		"mushroom_trunk.png",		"ethereal:mushroom_trunk"},
 	{"acacia",		"Acacia Wood",	"moretrees_acacia_wood.png","ethereal:acacia_wood"},
-
+	{"pine",		"Pine Wood",	"default_pinewood.png",		"default:pinewood"},
 }
 
 for _, row in ipairs(gate.type) do
@@ -87,7 +87,7 @@ minetest.register_node("ethereal:"..name.."gate_open", {
 })
 
 minetest.register_node("ethereal:"..name.."gate_closed", {
-	description = name.." fence gate",
+	description = desc.." Gate",
 	tiles = {texture},
 	inventory_image = "default_gate_overlay.png^"..texture.."^default_gate_overlay.png^[makealpha:255,126,126",
 	wield_image = "default_gate_overlay.png^"..texture.."^default_gate_overlay.png^[makealpha:255,126,126",
