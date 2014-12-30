@@ -36,7 +36,6 @@ ethereal.plains 		= 1 -- Dry dirt with scorched trees
 ethereal.fiery 			= 1 -- Red grass with lava craters
 ethereal.sandclay		= 1 -- Sand areas with clay underneath
 
-dofile(minetest.get_modpath("ethereal").."/mapgen_v7s.lua")
 dofile(minetest.get_modpath("ethereal").."/plantlife.lua")
 dofile(minetest.get_modpath("ethereal").."/mushroom.lua")
 dofile(minetest.get_modpath("ethereal").."/onion.lua")
@@ -55,6 +54,7 @@ dofile(minetest.get_modpath("ethereal").."/sealife.lua")
 dofile(minetest.get_modpath("ethereal").."/fences.lua")
 dofile(minetest.get_modpath("ethereal").."/gates.lua")
 dofile(minetest.get_modpath("ethereal").."/stairs.lua")
+dofile(minetest.get_modpath("ethereal").."/mapgen_v7s.lua")
 
 -- Xanadu server Only
 --dofile(minetest.get_modpath("ethereal").."/plantpack.lua")
