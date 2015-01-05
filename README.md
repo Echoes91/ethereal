@@ -1,6 +1,7 @@
 ethereal
 
 Ethereal v7 Mapgen mod for Minetest
+https://forum.minetest.net/viewtopic.php?id=7656
 
 Changelog:
 
