@@ -19,7 +19,7 @@ minetest.register_abm({
 
 			local crystal = minetest.find_nodes_in_area(pos0, pos1, {"ethereal:crystalgrass"})
 			local frost = minetest.find_nodes_in_area(pos0, pos1, {"ethereal:frost_tree"})
-			if #crystal > 10 and #frost > 10 then
+			if #crystal > 7 and #frost > 7 then
 				local ppos = crystal[1]
 				ppos.y = ppos.y - 1
 				local nod = minetest.get_node(ppos).name
