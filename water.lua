@@ -79,7 +79,7 @@ minetest.register_abm({
 	--nodenames = {"group:melts", "default:dirt_with_snow"},
 	--neighbors = {"group:hot"},
 	neighbors = {"fire:basic_fire", "default:lava_source", "default:lava_flowing", "default:furnace_active", "default:torch"},
-	interval = 10,
+	interval = 1, -- 10
 	chance = 2,
 	action = function(pos, node, active_object_count, active_object_count_wider)
 
@@ -88,7 +88,7 @@ minetest.register_abm({
 		if node.name == "default:ice" or node.name == "default:snowblock" 
 		or node.name == "ethereal:icebrick" or node.name == "ethereal:snowbrick" then
 			minetest.add_node(pos,{name="default:water_source"})
-		elseif node.name == "default:snow" or string.split(node.name, ":")[1]then
+		elseif node.name == "default:snow" then -- or string.split(node.name, ":")[1]then
 			minetest.add_node(pos,{name="default:water_flowing"})
 		elseif node.name == "default:dirt_with_snow" then
 			minetest.add_node(pos,{name="default:dirt_with_grass"})
