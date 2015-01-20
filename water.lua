@@ -22,7 +22,7 @@ minetest.register_node("ethereal:snowbrick", {
 	tiles = {"brick_snow.png"},
 	paramtype = "light",
 --	leveled = 7,
-	drawtype = "nodebox",
+	--drawtype = "nodebox",
 	freezemelt = "default:water_source",
 	groups = {crumbly=3, melts=1},
 	sounds = default.node_sound_dirt_defaults({

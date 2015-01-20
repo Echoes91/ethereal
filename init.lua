@@ -1,6 +1,6 @@
 --[[
 
-	Minetest Ethereal Mod 1.14 (29th Dec 2014)
+	Minetest Ethereal Mod 1.14 (20th Jan 2015)
 
 	Created by ChinChow
 
@@ -55,6 +55,7 @@ dofile(minetest.get_modpath("ethereal").."/fences.lua")
 dofile(minetest.get_modpath("ethereal").."/gates.lua")
 dofile(minetest.get_modpath("ethereal").."/stairs.lua")
 dofile(minetest.get_modpath("ethereal").."/mapgen_v7s.lua")
+--dofile(minetest.get_modpath("ethereal").."/mapgen_v7n.lua") -- 0.4.11 dev only
 
 -- Xanadu server Only
 --dofile(minetest.get_modpath("ethereal").."/plantpack.lua")
