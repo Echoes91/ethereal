@@ -5,6 +5,12 @@ https://forum.minetest.net/viewtopic.php?id=7656
 
 Changelog:
 
+1.15
+Added Staff of Light (thanks Xanthin), crafted from illumishrooms and can turn stone into glostone and back again
+Changed how Crystal Spikes reproduce
+Crystal Ingots now require 2x mese crystal and 2x crystal spikes to craft
+
+
 1.14
 
 Changed Ethereal to work with Minetest 0.4.11 update and new mapgen features
