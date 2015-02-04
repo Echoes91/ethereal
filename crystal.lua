@@ -27,7 +27,7 @@ minetest.register_craft({
 	output = "ethereal:crystal_ingot",
 	recipe = {
 		{"default:mese_crystal", "ethereal:crystal_spike", ""},
-		{"", "", ""},
+		{"ethereal:crystal_spike", "default:mese_crystal", ""},
 		{"", "", ""},
 	}
 })

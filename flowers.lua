@@ -2,8 +2,8 @@
 minetest.register_abm({
 	nodenames = {"group:flora"},
 	neighbors = {"group:soil"},
-	interval = 40,
-	chance = 20,
+	interval = 50,
+	chance = 25,
 	action = function(pos, node)
 
 		local light = minetest.get_node_light(pos)
@@ -17,15 +17,15 @@ minetest.register_abm({
 
 		if #minetest.find_nodes_in_area(pos0, pos1, "group:flora") > 3 then
 
-			local crystal = minetest.find_nodes_in_area(pos0, pos1, {"ethereal:crystalgrass"})
-			local frost = minetest.find_nodes_in_area(pos0, pos1, {"ethereal:frost_tree"})
-			if #crystal > 6 and #frost > 7 then
-				local ppos = crystal[1]
-				ppos.y = ppos.y - 1
-				local nod = minetest.get_node(ppos).name
-				ppos.y = ppos.y + 1
-				if nod == "ethereal:crystal_dirt" then
-					minetest.set_node(crystal[1], {name="ethereal:crystal_spike"})
+			local grass = minetest.find_nodes_in_area(pos0, pos1, {"ethereal:crystalgrass"})
+			local crystal = minetest.find_nodes_in_area(pos0, pos1, {"ethereal:crystal_spike"})
+
+			if #grass > 6 and #crystal < 1 then
+				grass = grass[math.random(#grass)]
+				grass.y = grass.y - 1
+				if minetest.get_node(grass).name == "ethereal:crystal_dirt" then
+					grass.y = grass.y + 1
+					minetest.set_node(grass, {name="ethereal:crystal_spike"})
 				end
 			end
 

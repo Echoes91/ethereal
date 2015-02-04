@@ -264,6 +264,48 @@ minetest.register_node("ethereal:illumishroom3", {
 	},
 })
 
+local USES = 100
+
+-- Staff of Light (by Xanthin)
+minetest.register_tool("ethereal:light_staff", {
+	description = "Staff of Light",
+	inventory_image = "light_staff.png",
+	stack_max = 1,
+	on_use = function(itemstack, user, pointed_thing)
+
+		local pos = pointed_thing.under
+
+		if pointed_thing.type ~= "node" then return end
+
+		if minetest.is_protected(pos, user:get_player_name()) then
+			minetest.record_protection_violation(pos, user:get_player_name())
+			return
+		end
+
+		local node = minetest.get_node(pos).name
+
+		if node == "default:stone" then
+			minetest.env:add_node(pos, {name="ethereal:glostone"})
+		elseif node == "ethereal:glostone" then
+			minetest.env:add_node(pos, {name="default:stone"})
+		end
+
+		if not minetest.setting_getbool("creative_mode") then
+			itemstack:add_wear(65535 / (USES - 1))
+			end
+			return itemstack
+	end,
+})
+
+minetest.register_craft({
+	output = "ethereal:light_staff",
+		recipe = {
+			{"ethereal:illumishroom", "default:mese_crystal", "ethereal:illumishroom"},
+			{"ethereal:illumishroom2", "default:steel_ingot", "ethereal:illumishroom2"},
+			{"ethereal:illumishroom3", "default:steel_ingot", "ethereal:illumishroom3"}
+		}
+})
+
 -- Generate Illumishroom in caves next to coal
 minetest.register_on_generated(function(minp, maxp, seed)
 
