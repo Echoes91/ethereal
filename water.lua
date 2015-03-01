@@ -66,9 +66,9 @@ minetest.register_abm({
 		local pos0 = {x=pos.x-1,y=pos.y-1,z=pos.z-1}
 		local pos1 = {x=pos.x+1,y=pos.y+1,z=pos.z+1}
 
-		local water = minetest.env:find_nodes_in_area(pos0, pos1, "default:water_source")
+		local water = minetest.find_nodes_in_area(pos0, pos1, "default:water_source")
 		if water then
-			minetest.env:set_node(water[1], {name="default:ice"})
+			minetest.set_node(water[1], {name="default:ice"})
 		end
 	end,
 })
@@ -118,11 +118,29 @@ minetest.register_abm({
 		local pos0 = {x=pos.x-1,y=pos.y-1,z=pos.z-1}
 		local pos1 = {x=pos.x+1,y=pos.y+1,z=pos.z+1}
 
-		local water = minetest.env:find_nodes_in_area(pos0, pos1, "group:water")
+		local water = minetest.find_nodes_in_area(pos0, pos1, "group:water")
 		if water then
 			for n = 1, #water do
-				minetest.env:set_node(water[n], {name="air"})
+				minetest.set_node(water[n], {name="air"})
 			end
+		end
+	end,
+})
+]]
+--[[
+-- If torch next to water then drop torch
+minetest.register_abm({
+	nodenames = {"default:torch"},
+	neighbors = {"default:water_source", "default:water_flowing"},
+	interval = 1,
+	chance = 1,
+
+	action = function(pos, node)
+		local pos0 = {x=pos.x-1,y=pos.y,z=pos.z-1}
+		local pos1 = {x=pos.x+1,y=pos.y+1,z=pos.z+1}
+		if #minetest.find_nodes_in_area(pos0, pos1, {"default:water_source", "default:water_flowing"}) > 0 then
+			minetest.set_node(pos, {name="default:water_flowing"})
+			minetest.add_item(pos, {name = "default:torch"})
 		end
 	end,
 })

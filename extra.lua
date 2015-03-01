@@ -285,9 +285,9 @@ minetest.register_tool("ethereal:light_staff", {
 		local node = minetest.get_node(pos).name
 
 		if node == "default:stone" then
-			minetest.env:add_node(pos, {name="ethereal:glostone"})
+			minetest.add_node(pos, {name="ethereal:glostone"})
 		elseif node == "ethereal:glostone" then
-			minetest.env:add_node(pos, {name="default:stone"})
+			minetest.add_node(pos, {name="default:stone"})
 		end
 
 		if not minetest.setting_getbool("creative_mode") then

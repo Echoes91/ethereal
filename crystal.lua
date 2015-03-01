@@ -148,7 +148,7 @@ minetest.register_tool("ethereal:shovel_crystal", {
 
 				local inv = user:get_inventory()
 
-				minetest.env:remove_node(pointed_thing.under)
+				minetest.remove_node(pointed_thing.under)
 				nodeupdate(pos)
 				
 				inv:add_item("main", {name = nn})
